@@ -1,6 +1,6 @@
 ---
 title: "Disease, Epidemics and Vaccination Effectiveness through Agent Based Modelling"
-excerpt: "The portfolio is currently a work-in-progress.<br/><img src='/images/500x300.png'>"
+excerpt: "The aim of this project was to look at how vaccines affect disease spread. <br/><img src='/images/standard_disease_spread.gif'>"
 collection: portfolio
 ---
 
