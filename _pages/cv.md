@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* Bachelor of Engineering in Computer Engineering Co-op, University of Guelph, 2018
 * Master of Applied Science in Engineering + AI, University of Guelph, 2020
+* Bachelor of Engineering in Computer Engineering Co-op, University of Guelph, 2018
 
 Work experience
 ======
