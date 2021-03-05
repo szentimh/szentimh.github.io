@@ -16,7 +16,7 @@ looking at complex global and socioeconomic issues using computational modelling
 I was involved in a team of three to model a complex issue using the techniques discussed in the course.
 
 The issue my team and I tackled was to model how disease spreads and vaccine effectness through the use of 
-agent-based modelling. Agent-based modelling involves modelling a system using a collection of autonomous 
+agent based modelling. Agent based modelling involves modelling a system using a collection of autonomous 
 entities interacting with other agents and the surronding environment. 
 The goal of the model was to mimic the
 movements of people as well as disease spread, and to see the effect vaccination would have on the population. 
