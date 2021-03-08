@@ -1,12 +1,19 @@
 ---
 title: "Disease, Epidemics and Vaccination Effectiveness through Agent Based Modelling"
-excerpt: "The aim of this project was to look at how vaccines affect disease spread. <br/><img src='/images/standard_disease_spread.gif'>"
+excerpt: "This project involved using computational modelling to look at how vaccines affect disease spread. <br/><img src='/images/standard_disease_spread.gif'>"
 collection: portfolio
 ---
 
 Overview
 ======
+This project involved using computational modelling to look at how vaccines affect disease spread. The goal of the
+project was to see the effectiveness of vaccines to slow and stop the spread of disease. The model consisted of people
+who randomly moved around in the environment, and these people could be healthy, sick, or dead as well as have been 
+vaccinated or not. As people moved around the disease could spread based on various parameters such as
+the distance between people, the infection rate of the disease, and the vaccine effectiveness. The simulations for
+the model can be visualized as seen below.
 
+<br/><img src='/images/standard_disease_spread.gif'>
 
 
 The Problem
