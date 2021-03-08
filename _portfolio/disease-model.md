@@ -22,7 +22,7 @@ During my undergraduate degree, I took a course called ENGG*3130-Modelling Compl
 looking at complex global and socioeconomic issues using computational modelling in Python. As part of the course,
 I was involved in a team of three to model a complex issue using the techniques discussed in the course.
 
-The issue my team and I tackled was to model how disease spreads and vaccine effectness through the use of 
+The issue my team and I tackled was to model how disease spreads and vaccine effectiveness through the use of 
 agent based modelling. Agent based modelling involves modelling a system using a collection of autonomous 
 entities interacting with other agents and the surronding environment. 
 The goal of the model was to mimic the
@@ -44,6 +44,9 @@ The agents in the model represent the people in society. People are able to move
 is not occupied and is within viewing distance, and they can be vaccinated or not vaccinated as well as be sick,
 healthy, or dead. A person with the disease can spread it to other nearby people based on how far it can spread,
 the infection rate of the disease, and if that person is vaccinated or not.
+
+
+<br/><img src='/images/model_at_diff_stages.pdf'>
 
 The Result
 ======
