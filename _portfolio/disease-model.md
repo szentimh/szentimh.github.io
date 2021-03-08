@@ -46,9 +46,7 @@ healthy, or dead. A person with the disease can spread it to other nearby people
 the infection rate of the disease, and if that person is vaccinated or not.
 
 
-<br/><img src='/images/standard_disease_spread.gif'>
-
-<br/><img src='/images/model_at_diff_stages.pdf'>
+<br/><embed src='/images/model_at_diff_stages.pdf" width='100%' height='100%' />
 
 The Result
 ======
