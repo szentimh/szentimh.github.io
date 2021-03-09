@@ -45,9 +45,28 @@ is not occupied and is within viewing distance, and they can be vaccinated or no
 healthy, or dead. A person with the disease can spread it to other nearby people based on how far it can spread,
 the infection rate of the disease, and if that person is vaccinated or not.
 
+Each person stores the state that they are in. A person can be in one of four different states. 
+Vulnerable & vaccinated is the state a person is in when they have not caught the disease before and have
+not been vaccinated.
+Vulnerable & vaccinated is the state a person is in when they have not caught the disease before and have
+been vaccinated. 
+Sick is the state a person is in when they are currently sick with the disease.
+Survived is the state a person is in when they have had the disease and successfully fight it off. 
+This model assumes that once a person has caught the disease and is no longer sick, they cannot catch
+the disease again.
+
+The models are executed in a step.
+
+
+The figure below shows the model at the beginning of the simulation in the left subplot, at step 10 in the center
+subplot, and at step 25 in the right subplot.
+
 
 <img src='/images/model_at_diff_stages.svg' class='center'>
 
+
+My contribution towards the project was helping with the design of the model as well as programming the agents
+and the environment. I did some work towards programming the visualizations.
 
 The Result
 ======
