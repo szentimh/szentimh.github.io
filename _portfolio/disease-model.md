@@ -43,6 +43,8 @@ Sick is the state a person is in when they are currently sick with the disease.
 Survived is the state a person is in when they have had the disease and successfully fight it off. 
 This model assumes that once a person has caught the disease and is no longer sick, they cannot catch
 the disease again.
+If a person ends up dying because of the disease, the person is removed from the model and the death
+is recorded as well as which time stamp it occured.
 
 The model takes consecative steps in time. During each step, two different parts of the model are addressed. 
 First, for every person in the model, the surronding people are observed to see if any of them are sick and
@@ -54,10 +56,12 @@ step, and this is continued until the specified number of steps have been taken.
 
 The figure below shows the model at the beginning of the simulation in the left subplot, at step 10 in the center
 subplot, and at step 25 in the right subplot. During the first step, a single person will begin by being sick.
-As 
+As the simulation for the model progresses, the disease spreads and causes more people to become sick or pass away.
+The simulation ends once there is no people sick with the disease to continue its spread.
 
 <img src='/images/model_at_diff_stages.svg' class='center'>
 
+A larger simulation can be seen in the animation below.
 
 <img src='/images/standard_disease_spread.gif' class='center'>
 
