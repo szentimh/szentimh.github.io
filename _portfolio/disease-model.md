@@ -13,7 +13,7 @@ vaccinated or not. As people moved around the disease could spread based on vari
 the distance between people, the infection rate of the disease, and the vaccine effectiveness. The simulations for
 the model can be visualized as seen below.
 
-<br/><img src='/images/standard_disease_spread.gif'>
+<img src='/images/standard_disease_spread.gif' class='center'>
 
 
 The Problem
@@ -46,7 +46,7 @@ healthy, or dead. A person with the disease can spread it to other nearby people
 the infection rate of the disease, and if that person is vaccinated or not.
 
 
-<br/><img src='/images/model_at_diff_stages.svg'>
+<img src='/images/model_at_diff_stages.svg' class='center'>
 
 
 The Result
