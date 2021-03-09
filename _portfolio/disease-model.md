@@ -4,35 +4,24 @@ excerpt: "This project involved using computational modelling to look at how vac
 collection: portfolio
 ---
 
-Overview
-======
-This project involved using computational modelling to look at how vaccines affect disease spread. The goal of the
-project was to see the effectiveness of vaccines to slow and stop the spread of disease. The model consisted of people
-who randomly moved around in the environment, and these people could be healthy, sick, or dead as well as have been 
-vaccinated or not. As people moved around the disease could spread based on various parameters such as
-the distance between people, the infection rate of the disease, and the vaccine effectiveness. The simulations for
-the model can be visualized as seen below.
-
-<img src='/images/standard_disease_spread.gif' class='center'>
-
-
-The Problem
+Role
 ======
 During my undergraduate degree, I took a course called ENGG*3130-Modelling Complex Systems. This course focused on
 looking at complex global and socioeconomic issues using computational modelling in Python. As part of the course,
-I was involved in a team of three to model a complex issue using the techniques discussed in the course.
+I was involved in a group of three to model a complex issue using the techniques discussed in the course.
 
-The issue my team and I tackled was to model how disease spreads and vaccine effectiveness through the use of 
+My contribution towards the project was helping with the design of the model as well as programming 
+most of the model in Python. I also partially contributed towards programming the visualizations.
+
+Problem
+======
+The issue my group and I tackled was to model how disease spreads and vaccine effectiveness through the use of 
 agent based modelling. Agent based modelling involves modelling a system using a collection of autonomous 
 entities interacting with other agents and the surronding environment. 
 The goal of the model was to mimic the
 movements of people as well as disease spread, and to see the effect vaccination would have on the population. 
 
-The Data 
-======
-For this project no external or internal dataset was used.
-
-The Model
+Solution
 ======
 There are two main components to the model; the environment and the agents.
 
@@ -55,24 +44,34 @@ Survived is the state a person is in when they have had the disease and successf
 This model assumes that once a person has caught the disease and is no longer sick, they cannot catch
 the disease again.
 
-The models are executed in a step.
-
+The model takes consecative steps in time. During each step, two different parts of the model are addressed. 
+First, for every person in the model, the surronding people are observed to see if any of them are sick and
+could spread the disease based on different parameters such as if the person is vaccinated, the infection rate, 
+and the range a person could affect another person. Additionally, any sick person has a chance of dying while 
+being infected, which is done at this time as well. These steps update the state of the people in the model. 
+Once this has finished, every person moves to a new position. After this has completed the model takes another
+step, and this is continued until the specified number of steps have been taken.
 
 The figure below shows the model at the beginning of the simulation in the left subplot, at step 10 in the center
-subplot, and at step 25 in the right subplot.
-
+subplot, and at step 25 in the right subplot. During the first step, a single person will begin by being sick.
+As 
 
 <img src='/images/model_at_diff_stages.svg' class='center'>
 
 
-My contribution towards the project was helping with the design of the model as well as programming the agents
-and the environment. I did some work towards programming the visualizations.
+<img src='/images/standard_disease_spread.gif' class='center'>
 
-The Result
+Impact
 ======
 
-Further Information
+
+
+Code/Demo/Further Information
 ======
+
+
 The project can be found in my GitHub profile or by using this link: 
 [disease-agent-model](https://github.com/szentimh/disease-agent-model).
+The project was done in a Jupyter Notebook and the visualizations and cell outputs can be seen in the repository.
+
 
