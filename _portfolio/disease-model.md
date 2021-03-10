@@ -65,15 +65,27 @@ A larger simulation can be seen in the animation below.
 
 <img src='/images/standard_disease_spread.gif' class='center'>
 
+A series of simulations were executed with varying vaccination rates amoung the population to test herd immunity. 
+For every simulation run, the same disease parameters were used and the only parameter being adjusted is 
+the vaccination rate. The method used to evaluate how well the vaccination rate keeps the whole population healthy 
+is to track the amount of people still alive after each step of the simulation. The following figures show how
+the vaccination rate affects the number of people alive by the end of the simulation. From these simualtions it
+can be seen that for this particular disease, the number of people who die as a result of the disease starts to
+increase drastically when the vaccination rate decreases to be below 88%. This means that the vaccination rate
+should be at least 88% to ensure herd immunity is present.
+
+<img src='/images/heard_immunity_course.svg' class='center'>
+
+<img src='/images/heard_immunity_fine.svg' class='center'>
+
 Impact
 ======
-
-
+This project was completed and delivered on time. The model was able to successfully simulate various different diseases
+and vaccines based on parameters a user can change to their desired value. While the model was developed before the 
+COVID-19 pandemic, it could be used to model this disease and the various vaccines that have been developed for it.
 
 Code/Demo/Further Information
 ======
-
-
 The project can be found in my GitHub profile or by using this link: 
 [disease-agent-model](https://github.com/szentimh/disease-agent-model).
 The project was done in a Jupyter Notebook and the visualizations and cell outputs can be seen in the repository.
