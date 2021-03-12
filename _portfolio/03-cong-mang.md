@@ -8,7 +8,7 @@ Role
 ======
 During my Master's degree I was part of the Guelph FPGA CAD Group, which consisted of faculty and students from the
 School of Engineering and the School of Computer Science at the University of Guelph. My role in the group was to 
-research and implement machine learning models with could help with FPGA CAD tools. As part of this research I helped
+research and implement machine learning models with could help with FPGA CAD tools. As part of this research, I helped
 to contribute towards a paper titled "Machine Learning for Congestion Management and Routability Prediction within
 FPGA Placement."
 
@@ -25,17 +25,17 @@ There are multiple steps in the CAD tool which needs to be done, and one of the 
 research was the placement step. 
 
 The placement step needs to find a way to place all of the components of the described circuit onto the FPGA. There are
-many contraints which need to be considered to make sure the circuit can be placed. One constraint is that FPGAs only
+many constraints which need to be considered to make sure the circuit can be placed. One constraint is that FPGAs only
 have so many resources on them that can be used. If the design is too large, it might not fit on the FPGA. A second
-contraint is the routing resources needed to connect components. The routing resources consist of wires which run throughout
+constraint is the routing resources needed to connect components. The routing resources consist of wires which run throughout
 the FPGA, and switches which connect these wires together. If certain components are placed too close together or too far 
 away, the design might end up needing too many wires for the design, so it cannot fit on the FPGA. Additionally, if the
 path between certain components is too long, the circuit may not function correctly. The routing step, which involves finding
 how all of the wires and switches should be set, is done after placement and is the final step. If the placement step does not
 consider the routing resources, then the routing step could fail and the placement step would need to be repeated. This 
-results in both the placement and routing steps heaily relying on each other.
+results in both the placement and routing steps heavily relying on each other.
 
-Because of all of the contraints and other considerations during FPGA placement,
+Because of all of the constraints and other considerations during FPGA placement,
 it is a very difficult problem that can take hours or days to find a placement for large circuit designs. This slows down
 the development cycle for designers who use FPGAs. FPGAs are used in many different industries and products, including
 biomedical devices, defense, broadcasting equipment, and automotive vehicles.
@@ -63,7 +63,7 @@ connect to a switch. The model is given an image of the congestion from any poin
 input for the DLRoute model) and the output is an array of inflation values. These inflations values represent how the
 size of the components should change so components in a heavily congested area move and spread to areas with lower congestion.
 
-These models were they used in different combinations in an FPGA placement CAD tool to see how much time can be saved by
+These models were then used in different combinations in an FPGA placement CAD tool to see how much time can be saved by
 replacing traditional algorithms with the models. While the goal was to reduce the amount of time the FPGA placement step
 took to find a placement, it was still important that the placement generated did not go down in terms of quality. In order
 to ensure that was the case, the total wirelength (the amount of wire being using in the FPGA) was used as a measure of quality.

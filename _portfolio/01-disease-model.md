@@ -17,7 +17,7 @@ Problem
 ======
 The issue my group and I tackled was to model how disease spreads and vaccine effectiveness through the use of 
 agent based modelling. Agent based modelling involves modelling a system using a collection of autonomous 
-entities interacting with other agents and the surronding environment. 
+entities interacting with other agents and the surrounding environment. 
 The goal of the model was to mimic the
 movements of people as well as disease spread, and to see the effect vaccination would have on the population. 
 
@@ -44,10 +44,10 @@ Survived is the state a person is in when they have had the disease and successf
 This model assumes that once a person has caught the disease and is no longer sick, they cannot catch
 the disease again.
 If a person ends up dying because of the disease, the person is removed from the model and the death
-is recorded as well as which time stamp it occured.
+is recorded as well as which time stamp it occurred.
 
-The model takes consecative steps in time. During each step, two different parts of the model are addressed. 
-First, for every person in the model, the surronding people are observed to see if any of them are sick and
+The model takes consecutive steps in time. During each step, two different parts of the model are addressed. 
+First, for every person in the model, the surrounding people are observed to see if any of them are sick and
 could spread the disease based on different parameters such as if the person is vaccinated, the infection rate, 
 and the range a person could affect another person. Additionally, any sick person has a chance of dying while 
 being infected, which is done at this time as well. These steps update the state of the people in the model. 
@@ -57,7 +57,7 @@ step, and this is continued until the specified number of steps have been taken.
 The figure below shows the model at the beginning of the simulation in the left subplot, at step 10 in the center
 subplot, and at step 25 in the right subplot. During the first step, a single person will begin by being sick.
 As the simulation for the model progresses, the disease spreads and causes more people to become sick or pass away.
-The simulation ends once there is no people sick with the disease to continue its spread.
+The simulation ends once there are no more people sick with the disease to continue its spread.
 
 <img src='/images/model_at_diff_stages.svg' class='center'>
 
@@ -65,11 +65,11 @@ A larger simulation can be seen in the animation below.
 
 <img src='/images/standard_disease_spread.gif' class='center'>
 
-A series of simulations were executed with varying vaccination rates amoung the population to test herd immunity. 
+A series of simulations were executed with varying vaccination rates among the population to test herd immunity. 
 For every simulation run, the same disease parameters were used and the only parameter being adjusted is 
 the vaccination rate. The method used to evaluate how well the vaccination rate keeps the whole population healthy 
 is to track the amount of people still alive after each step of the simulation. The following figures show how
-the vaccination rate affects the number of people alive by the end of the simulation. From these simualtions it
+the vaccination rate affects the number of people alive by the end of the simulation. From these simulations it
 can be seen that for this particular disease, the number of people who die as a result of the disease starts to
 increase drastically when the vaccination rate decreases to be below 88%. This means that the vaccination rate
 should be at least 88% to ensure herd immunity is present.
@@ -89,5 +89,4 @@ Code/Demo/Further Information
 The project can be found in my GitHub profile or by using this link: 
 [disease-agent-model](https://github.com/szentimh/disease-agent-model).
 The project was done in a Jupyter Notebook and the visualizations and cell outputs can be seen in the repository.
-
 
