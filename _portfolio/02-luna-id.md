@@ -56,12 +56,12 @@ take the prototype we provided and develop it further.
 
 The Google Play Store page for the app can be seen below.
 
-<img src='/images/Luna_ID_play_store_listing.png'>
+<img src='/images/Luna_ID_play_store_listing.png' height='80%'>
 
 Code/Demo/Further Information
 ======
 The following video is a demonstration of how the final version of the app worked.
 
-<!-- <iframe src="/images/Luna_ID_demo.mp4" frameborder="0" allowfullscreen></iframe> -->
+<iframe src="/images/Luna_ID_demo.mp4" frameborder="0" allowfullscreen></iframe>
 
 
