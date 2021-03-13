@@ -35,6 +35,8 @@ how all of the wires and switches should be set, is done after placement and is 
 consider the routing resources, then the routing step could fail and the placement step would need to be repeated. This 
 results in both the placement and routing steps heavily relying on each other.
 
+<img src='/images/fpga_placement_routing.svg'>
+
 Because of all of the constraints and other considerations during FPGA placement,
 it is a very difficult problem that can take hours or days to find a placement for large circuit designs. This slows down
 the development cycle for designers who use FPGAs. FPGAs are used in many different industries and products, including
