@@ -72,7 +72,7 @@ giving it to the model. This helps to determine if the placement step needs to c
 and the routing step will still be successful. An example of the image containing the congestion throughout the 
 FPGA, which is used as the input for DLRoute, can be seen below.
 
-<img src='/images/fpga_cong_heatmap.jpg'>
+<img src='/images/fpga_cong_heatmap.jpg' align="middle">
 
 In addition to MLCong and DLRoute, a third machine learning model was developed. This model, referred to as DLManage,
 manages the congestion in the FPGA placement by predicting how much to artificially inflate the size of the components
