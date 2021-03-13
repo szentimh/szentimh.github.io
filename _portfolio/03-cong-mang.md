@@ -21,19 +21,31 @@ Problem
 Field programmable gate arrays (FPGAs) are chips where the hardware on the chip can be changed, or reconfigured, 
 depending on the design. This allows a designer to describe a circuit, or hardware, in a programming language or by other means 
 and a computer-aided design (CAD) tool transforms this description to a file the FPGA can use to configure itself.
-There are multiple steps in the CAD tool which needs to be done, and one of the steps I focused on for my
-research was the placement step. 
+There are multiple steps in the CAD tool which needs to be done. The focus of my research was the placement step, and
+the step after placement, which is routing, is heavily reliant on the placement step and needed to be considered.
 
+The image below shows an example of a typical FPGA and the process for the placement and routing steps. The top
+diagram shows the typical FPGA layout with components that need to be placed onto the FPGA. The blocks in the
+FPGA contain the components of the design. The wires connect the components in the block to a switch, which connects
+wires together to connect components to each other. 
+
+The middle diagram shows an example for the placement step. 
 The placement step needs to find a way to place all of the components of the described circuit onto the FPGA. There are
 many constraints which need to be considered to make sure the circuit can be placed. One constraint is that FPGAs only
 have so many resources on them that can be used. If the design is too large, it might not fit on the FPGA. A second
 constraint is the routing resources needed to connect components. The routing resources consist of wires which run throughout
 the FPGA, and switches which connect these wires together. If certain components are placed too close together or too far 
 away, the design might end up needing too many wires for the design, so it cannot fit on the FPGA. Additionally, if the
-path between certain components is too long, the circuit may not function correctly. The routing step, which involves finding
+path between certain components is too long, the circuit may not function correctly. 
+In the diagram, it can be seen that the components are placed in the blocks of the FPGA.
+
+The bottom diagram shows the routing step once the placement step has completed. 
+The routing step, which involves finding
 how all of the wires and switches should be set, is done after placement and is the final step. If the placement step does not
 consider the routing resources, then the routing step could fail and the placement step would need to be repeated. This 
 results in both the placement and routing steps heavily relying on each other.
+In the diagram, it can be seen that
+different wires are allocated and connected to ensure the necessary components are connected.
 
 <img src='/images/fpga_placement_routing.svg'>
 
