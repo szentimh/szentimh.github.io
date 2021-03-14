@@ -62,8 +62,6 @@ Code/Demo/Further Information
 ======
 The following video is a demonstration of how the final version of the app worked.
 
-<figure class="video_container">
-   <iframe src="/images/Luna_ID_demo.mp4" frameborder="0" allowfullscreen="true"></iframe>
-</figure>
+<iframe style="width:100%; height:500px" src="/images/Luna_ID_demo.mp4" frameborder="0" allowfullscreen="true"></iframe>
 
 
