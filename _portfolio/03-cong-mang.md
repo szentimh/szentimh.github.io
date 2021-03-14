@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning for Congestion Management and Routability Prediction within FPGA Placement"
-excerpt: "This project involved using machine learning to help with the FPGA placement problem. <br/><img src=''>"
+excerpt: "This project involved using machine learning to help with the FPGA placement problem. <br/><img src='/images/cong_heatmap_models.svg'>"
 collection: portfolio
 ---
 
@@ -69,16 +69,20 @@ a certain switch, it is said to be congested.
 DLRoute is able to predict if a placement can be successfully routed during the routing step by
 taking an image of the congestion throughout the entire FPGA at any point throughout the placement step and 
 giving it to the model. This helps to determine if the placement step needs to continue further or if it can end early 
-and the routing step will still be successful. An example of the image containing the congestion throughout the 
-FPGA, which is used as the input for DLRoute, can be seen below.
-
-<img src='/images/fpga_cong_heatmap.jpg' align="middle">
+and the routing step will still be successful.
 
 In addition to MLCong and DLRoute, a third machine learning model was developed. This model, referred to as DLManage,
 manages the congestion in the FPGA placement by predicting how much to artificially inflate the size of the components
 connect to a switch. The model is given an image of the congestion from any point of the placement step (this is the same
 input for the DLRoute model) and the output is an array of inflation values. These inflations values represent how the
 size of the components should change so components in a heavily congested area move and spread to areas with lower congestion.
+
+An example of the input and output to the DLRoute and DLManage models can be seen below. Both models take the same input,
+which is an image of the congestion throughout the FPGA. The DLRoute model outputs a 0 or 1 to predict if the placement
+can be routed or not in the next step. The DLManage model outputs an array of inflation values to inflate the components
+by to spread them out.
+
+<img src='/images/cong_heatmap_models.svg'>
 
 These models were then used in different combinations in an FPGA placement CAD tool to see how much time can be saved by
 replacing traditional algorithms with the models. While the goal was to reduce the amount of time the FPGA placement step
