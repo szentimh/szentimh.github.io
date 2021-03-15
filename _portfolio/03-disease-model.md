@@ -35,7 +35,7 @@ healthy, or dead. A person with the disease can spread it to other nearby people
 the infection rate of the disease, and if that person is vaccinated or not.
 
 Each person stores the state that they are in. A person can be in one of four different states. 
-Vulnerable & vaccinated is the state a person is in when they have not caught the disease before and have
+Vulnerable & unvaccinated is the state a person is in when they have not caught the disease before and have
 not been vaccinated.
 Vulnerable & vaccinated is the state a person is in when they have not caught the disease before and have
 been vaccinated. 
