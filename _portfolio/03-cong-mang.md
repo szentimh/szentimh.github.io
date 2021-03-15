@@ -8,7 +8,7 @@ Role
 ======
 During my Master's degree I was part of the Guelph FPGA CAD Group, which consisted of faculty and students from the
 School of Engineering and the School of Computer Science at the University of Guelph. My role in the group was to 
-research and implement machine learning models with could help with FPGA CAD tools. As part of this research, I helped
+research and implement machine learning models that could help with FPGA CAD tools. As part of this research, I helped
 to contribute towards a paper titled "Machine Learning for Congestion Management and Routability Prediction within
 FPGA Placement."
 
