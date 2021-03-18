@@ -84,6 +84,14 @@ by to spread them out.
 
 <img src='/images/cong_heatmap_models.svg'>
 
+In order to get the data to train these models, an FPGA placer was used to generate placements. There were 372 circuit 
+benchmarks that are used as input for the placer. The placer takes the benchmarks and generates a placement as the output.
+Due to the iterative nature of the placer, an image of the congestion in the FPGA and a placement file could
+be generated at multiple points throughout the placement process. This results in being able to generate more data for 
+training the machine learning models. The congestion image was used as input for some of the models, and the placement file
+was used with a router to generate the true values to label the data for training. Over 26,000 samples of data were able to
+be generated.
+
 These models were then used in different combinations in an FPGA placement CAD tool to see how much time can be saved by
 replacing traditional algorithms with the models. While the goal was to reduce the amount of time the FPGA placement step
 took to find a placement, it was still important that the placement generated did not go down in terms of quality. In order
