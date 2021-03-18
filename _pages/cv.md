@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<embed src="/images/hannah_szentimrey_resume.pdf" width="100%" />
+
 Education
 ======
 * Master of Applied Science in Engineering + AI, University of Guelph, 2020
